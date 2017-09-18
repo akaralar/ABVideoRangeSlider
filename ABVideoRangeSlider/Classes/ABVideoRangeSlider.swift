@@ -257,6 +257,7 @@ public class ABVideoRangeSlider: UIView {
         return position
     }
 
+    @objc
     func startDragged(recognizer: UIPanGestureRecognizer){
         let translation = recognizer.translation(in: self)
 
@@ -317,7 +318,7 @@ public class ABVideoRangeSlider: UIView {
         layoutSubviews()
     }
 
-
+    @objc
     func endDragged(recognizer: UIPanGestureRecognizer){
         let translation = recognizer.translation(in: self)
 
@@ -376,7 +377,8 @@ public class ABVideoRangeSlider: UIView {
 
         layoutSubviews()
     }
-
+  
+    @objc
     func progressDragged(recognizer: UIPanGestureRecognizer){
         let translation = recognizer.translation(in: self)
 
@@ -409,6 +411,7 @@ public class ABVideoRangeSlider: UIView {
         layoutSubviews()
     }
 
+    @objc
     func viewDragged(recognizer: UIPanGestureRecognizer){
         let translation = recognizer.translation(in: self)
 
